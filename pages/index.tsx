@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import { getProviders, getSession, useSession } from 'next-auth/react'
 import Center from '../components/Center'
 import Sidebar from '../components/Sidebar'
 
@@ -15,3 +16,11 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+export async function getServerSideProps(context) {
+  const session = await getSession(context)
+
+  return {
+    props: { session },
+  }
+}
