@@ -30,7 +30,7 @@ function Center() {
         <div className="flex cursor-pointer items-center space-x-3 rounded-full bg-red-300 p-1 pr-2 opacity-90 hover:opacity-80">
           <img
             className="h-10 w-10 rounded-full"
-            src={session?.user?.image}
+            src={session?.user?.image ? session?.user?.image : ''}
             alt=""
           />
           <h2>{session?.user?.name}</h2>
