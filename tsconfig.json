@@ -20,7 +20,8 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/_middleware.ts",
-    "atom/playlistAtom.ts"
+    "atom/playlistAtom.ts",
+    "lib/time.js"
   ],
   "exclude": ["node_modules"]
 }

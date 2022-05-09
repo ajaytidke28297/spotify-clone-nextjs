@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { getProviders, getSession, useSession } from 'next-auth/react'
+import { getSession } from 'next-auth/react'
 import Center from '../components/Center'
 import Sidebar from '../components/Sidebar'
 
@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <Sidebar />
         <Center />
       </main>
-      <div>{/* Player */}</div>
+      <div>{/* <Songs /> */}</div>
     </div>
   )
 }
